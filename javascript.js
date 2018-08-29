@@ -17,6 +17,7 @@ console.log(second)
 // CONDITIONAL STATEMENTS AND LOOPS
 
 
+
 // STRINGS
 
 // write a script to check whether an input is a string or not
@@ -33,10 +34,21 @@ var str = [];
 console.log((str.length === 0 ? "true" : "false"))
 
 // write a script to split a string and convert it into an array of words
-var 
+var singer = "Tori Kelly".split(" ");
+console.log(singer)
+
 
 // ARRAYS
 
+// write a simple script to join all elements of a given array into a string
+var colors = ["Red", "Green", "White", "Black"];
+var rainbow = colors.join("");
+console.log(rainbow)
+
+// write a script to sort the items of an array
+var integers = [1, 3, 7, 2, 9, 1, 66, 33, 82, 6, 91, 34];
+integers.sort(function(a, b) {return a - b});
+console.log(integers)
 
 
 // OBJECTS
