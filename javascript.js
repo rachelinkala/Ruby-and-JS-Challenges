@@ -3,15 +3,13 @@
 
 
 // write a js function which will take an array of #s and find the 2nd lowest and 2nd greatest #s
-
-
 var stringArray = new Array('2', '6', '1', '3', '9', '7');
 var intArray = stringArray.map(Number);
 var second = intArray.sort(function(a,b){
     return b-a
   })[1];
 
-//console.log(second)
+console.log(second)
 
 
 
@@ -21,6 +19,7 @@ var second = intArray.sort(function(a,b){
 
 // STRINGS
 
+// write a script to check whether an input is a string or not
 function IsString(input) {
   return (typeof(input) == 'string' ? "true" : "false");
 }
@@ -29,6 +28,12 @@ console.log(IsString('w3'));
 
 console.log(IsString(1, 2, 3));
 
+// write a script to check whether a string is blank or not
+var str = [];
+console.log((str.length === 0 ? "true" : "false"))
+
+// write a script to split a string and convert it into an array of words
+var 
 
 // ARRAYS
 
@@ -45,14 +50,16 @@ var student = {
 
 var keys = Object.keys(student);
 
-//console.log(keys)
+console.log(keys)
 
 // write a script to delete the rollno property from the following object. Also print the object before or after deleting the property
-
 var students = {
   name : "David Rayy",
   sclass : "VI",
   rollno : 12
 };
 
+delete students.rollno;
+
+console.log(students)
 
